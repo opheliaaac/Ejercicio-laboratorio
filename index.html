@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Create Account</h1>
+        <form id="formulario" name="form-laboratorio">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <p class="texto-control oculto" id="control-nombre">Mensaje de error</p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" oninvalid="this.setCustomValidity('Incluye un signo &quot;&commat;&quot; en la dirección de correo electrónico. La dirección &quot;'+this.value+'&quot; no incluye el signo @.')">
+            <p class="texto-control oculto" id="control-email">Mensaje de error</p>
+            <label for="clave">Clave</label>
+            <input type="password" name="clave" id="clave">
+            <p class="texto-control oculto" id="control-clave">Mensaje de error</p>
+            <label for="confirmacion">Confirme su clave</label>
+            <input type="password" name="confirmacion" id="confirmacion">
+            <p class="texto-control oculto" id="control-confirmacion">Mensaje de error</p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
